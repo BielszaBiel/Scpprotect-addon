@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="scprotect_addon"
+version="1.0.0"
+displayName="scprotect addon 1.0.0"
+mixins = ["mixins.scpprotect_addon.json"]
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Krzyś, MCreator"
+
+[[dependencies.scprotect_addon]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.scprotect_addon]]
+    modId="scprotect"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+

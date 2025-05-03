@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "scprotect_addon:c_ikeycard",
+    "scprotect_addon:mtf_capkeycard",
+    "scprotect_addon:sc_pkeycard",
+    "scprotect_addon:guardkeycard",
+    "scprotect_addon:mt_fkeycard"
+  ]
+}

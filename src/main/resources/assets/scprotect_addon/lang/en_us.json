@@ -1,0 +1,14 @@
+{
+  "item.scprotect_addon_.mt_fkeycard": "MTF keycard",
+  "item.scprotect_addon.mtf_capkeycard": "MTF  Captain keycard",
+  "item.scprotect_addon_.mtf_capkeycard": "MTF  Captain keycard",
+  "item.scprotect_addon_.c_ikeycard": "CI keycard",
+  "item.scprotect_addon.sc_pkeycard": "SCP keycard",
+  "item.scprotect_addon_.sc_pkeycard": "SCP keycard",
+  "item_group.scprotect_addon_.keycard": "Keycard",
+  "item.scprotect_addon_.guardkeycard": "Guard keycard",
+  "item.scprotect_addon.c_ikeycard": "CI keycard",
+  "item.scprotect_addon.guardkeycard": "Guard keycard",
+  "item.scprotect_addon.mt_fkeycard": "MTF keycard",
+  "item_group.scprotect_addon.keycard": "Keycard"
+}

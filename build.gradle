@@ -1,0 +1,56 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.0.16' // dopasowane do Forge 1.20.1
+    id 'maven-publish'
+}
+
+group = 'net.zeus.scpprotect'
+version = '1.0.0'
+archivesBaseName = 'scprotect_addon'
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            mods {
+                scprotect_addon {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "scprotect_addon",
+            "Specification-Version": "1.0.0",
+            "Implementation-Title": project.name,
+            "Implementation-Version": project.version,
+            "MixinConfigs": "mixins.scpprotect_addon.json" // NAJWAŻNIEJSZE DLA MIXINÓW
+        ])
+    }
+}
